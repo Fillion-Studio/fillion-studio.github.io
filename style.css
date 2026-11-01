@@ -1,0 +1,33 @@
+:root{--bg:#fde8f1;--card:#fff6fa;--ink:#5a1f3d;--soft:#8a5470;--pink:#ff8fc1;--lo:#d65e98;--yellow:#ffd21f;--yink:#2a1a00}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 "Nunito",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:var(--lo);font-weight:700}
+.wrap{max-width:760px;margin:0 auto;padding:24px 16px 48px}
+header.top{display:flex;align-items:center;gap:12px;justify-content:space-between;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:900;font-size:22px}
+.brand img{width:40px;height:40px;border-radius:10px}
+.lang{display:flex;gap:6px}
+.lang button{font:inherit;font-weight:800;border:0;border-radius:999px;padding:6px 14px;background:var(--card);color:var(--ink);box-shadow:0 3px 0 var(--lo);cursor:pointer}
+.lang button.on{background:var(--yellow);color:var(--yink);box-shadow:0 3px 0 #c79a00}
+.hero{text-align:center;padding:40px 0 16px}
+.hero img{width:144px;height:144px;border-radius:32px;box-shadow:0 10px 30px rgba(90,31,61,.25)}
+h1{font-size:44px;line-height:1.1;margin:18px 0 6px;font-weight:900}
+h2{font-size:26px;margin:36px 0 10px;font-weight:900}
+h3{font-size:19px;margin:22px 0 4px;font-weight:800}
+.tag{font-size:20px;color:var(--soft);margin:0}
+.badges{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin:24px 0 8px}
+.badge{display:inline-block;padding:12px 20px;border-radius:16px;background:var(--ink);color:#fff;font-weight:800;text-decoration:none}
+.badge small{display:block;font-weight:600;opacity:.75;font-size:12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-top:12px}
+.card{background:var(--card);border-radius:20px;padding:16px 18px;box-shadow:0 4px 0 rgba(214,94,152,.35)}
+.card b{display:block;font-size:18px}
+.doc{background:var(--card);border-radius:24px;padding:8px 22px 22px;box-shadow:0 4px 0 rgba(214,94,152,.35);margin-top:16px}
+.doc p,.doc li{color:#4a2236}
+.meta{color:var(--soft);font-size:15px}
+footer{margin-top:40px;text-align:center;color:var(--soft);font-size:15px}
+footer a{margin:0 8px}
+[data-lang]{display:none}
+html[lang=cs] [data-lang=cs],html[lang=en] [data-lang=en]{display:block}
+html[lang=cs] span[data-lang=cs],html[lang=en] span[data-lang=en]{display:inline}
+@media (max-width:480px){h1{font-size:36px}.hero img{width:120px;height:120px}}

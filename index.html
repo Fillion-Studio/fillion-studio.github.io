@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Fillion Games</title>
+<meta name="description" content="Fillion Games – mobilní hry. / Mobile games.">
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="lang.js"></script>
+<style>
+.studio{text-align:center;padding:56px 0 8px}
+.studio .mark{font-size:56px;font-weight:900;letter-spacing:-1px;margin:0}
+.game{display:flex;gap:16px;align-items:center;text-decoration:none;color:var(--ink)}
+.game img{width:84px;height:84px;border-radius:20px;flex:none}
+.game b{font-size:22px}
+.game div{font-weight:500}
+.game .soon{font-weight:800}
+.soon{display:inline-block;margin-top:6px;font-size:13px;font-weight:800;background:var(--yellow);color:var(--yink);border-radius:999px;padding:2px 10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <a class="brand" href="./">Fillion Games</a>
+    <div class="lang"><button data-set="cs">CZ</button><button data-set="en">EN</button></div>
+  </header>
+
+  <section class="studio">
+    <p class="mark">Fillion</p>
+    <p class="tag" data-lang="cs">Malé české studio, které dělá hravé mobilní hry.</p>
+    <p class="tag" data-lang="en">A small Czech studio making playful mobile games.</p>
+  </section>
+
+  <h2><span data-lang="cs">Naše hry</span><span data-lang="en">Our games</span></h2>
+  <a class="card game" href="poppult/">
+    <img src="poppult/icon.png" alt="Pop Pult">
+    <div>
+      <b>Pop Pult</b>
+      <div data-lang="cs">Svítící pop pult v mobilu – 10 módů, sbírka designů a souboj pro dva.</div>
+      <div data-lang="en">A glowing pop-it board on your phone – 10 modes, collectible designs and a two-player duel.</div>
+      <span class="soon"><span data-lang="cs">Brzy v App Store a Google Play</span><span data-lang="en">Coming soon to App Store &amp; Google Play</span></span>
+    </div>
+  </a>
+
+  <h2><span data-lang="cs">Kontakt</span><span data-lang="en">Contact</span></h2>
+  <p><a href="mailto:filliongames@gmail.com">filliongames@gmail.com</a></p>
+
+  <footer>
+    <p><a href="poppult/privacy.html"><span data-lang="cs">Zásady ochrany soukromí (Pop Pult)</span><span data-lang="en">Privacy Policy (Pop Pult)</span></a>
+       <a href="poppult/support.html"><span data-lang="cs">Podpora</span><span data-lang="en">Support</span></a></p>
+    <p>© 2026 Fillion Games</p>
+  </footer>
+</div>
+</body>
+</html>
