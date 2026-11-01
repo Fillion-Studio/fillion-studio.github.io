@@ -29,5 +29,6 @@ footer{margin-top:40px;text-align:center;color:var(--soft);font-size:15px}
 footer a{margin:0 8px}
 [data-lang]{display:none}
 html[lang=cs] [data-lang=cs],html[lang=en] [data-lang=en]{display:block}
+html[lang=cs] p.wip[data-lang=cs],html[lang=en] p.wip[data-lang=en]{display:inline-block}
 html[lang=cs] span[data-lang=cs],html[lang=en] span[data-lang=en]{display:inline}
 @media (max-width:480px){h1{font-size:36px}.hero img{width:120px;height:120px}}
