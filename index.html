@@ -12,15 +12,24 @@
 <link rel="stylesheet" href="style.css">
 <script src="lang.js"></script>
 <style>
-.studio{text-align:center;padding:56px 0 8px}
-.studio .mark{font-size:56px;font-weight:900;letter-spacing:-1px;margin:0}
-.game{display:flex;gap:16px;align-items:center;text-decoration:none;color:var(--ink)}
+/* Návrh A – celý web tmavý jako intro v Pop Pultu */
+body{background:#111;color:#eee}
+.wrap{padding-top:16px}
+header.top .brand{color:#fff}
+.lang button{background:#222;color:#eee;box-shadow:0 3px 0 #444}
+.hero{text-align:center;padding:24px 0 8px}
+.hero img{width:min(420px,90%);height:auto;display:block;margin:0 auto}
+.hero p{color:#aaa;font-weight:700;margin:0}
+h2{color:#fff}
+.game{display:flex;gap:16px;align-items:center;text-decoration:none;color:#eee;background:#1b1b1b;border-radius:22px;padding:16px;margin:14px 0;border:1px solid #2a2a2a;transition:transform .15s,border-color .15s}
+.game:hover{transform:translateY(-2px);border-color:#555}
 .game img{width:84px;height:84px;border-radius:20px;flex:none}
-.game b{font-size:22px}
-.game div{font-weight:500}
-.wip{margin:6px 0 0;background:var(--card);border-radius:999px;padding:8px 18px;font-weight:700;color:var(--soft);box-shadow:0 3px 0 rgba(214,94,152,.35)}
-.game .soon{font-weight:800}
-.soon{display:inline-block;margin-top:6px;font-size:13px;font-weight:800;background:var(--yellow);color:var(--yink);border-radius:999px;padding:2px 10px}
+.game b{font-size:22px;color:#fff}
+.game div{font-weight:500;color:#bbb}
+.pill{display:inline-block;margin-top:6px;font-size:13px;font-weight:800;border-radius:999px;padding:2px 10px;background:#fff;color:#111}
+.pill.soon{background:#333;color:#ddd}
+a{color:#fff}
+footer,footer a{color:#888}
 </style>
 </head>
 <body>
@@ -30,20 +39,30 @@
     <div class="lang"><button data-set="cs">CZ</button><button data-set="en">EN</button></div>
   </header>
 
-  <section class="studio">
-    <p class="mark">Fillion</p>
-    <p class="wip" data-lang="cs">🚧 Na webu právě pracujeme – brzy tu bude víc.</p>
-    <p class="wip" data-lang="en">🚧 We're working on our website – more coming soon.</p>
+  <section class="hero">
+    <img src="fillion-logo.png" alt="Fillion Games">
+    <p data-lang="cs">Malé hry do mobilu, se kterými je radost si hrát.</p>
+    <p data-lang="en">Small mobile games that are a joy to play.</p>
   </section>
 
   <h2><span data-lang="cs">Naše hry</span><span data-lang="en">Our games</span></h2>
-  <a class="card game" href="poppult.html">
+  <a class="game" href="poppult.html">
     <img src="icon.png" alt="Pop Pult">
     <div>
       <b>Pop Pult</b>
       <div data-lang="cs">Svítící pop pult v mobilu – 10 módů, sbírka designů a souboj pro dva.</div>
       <div data-lang="en">A glowing pop-it board on your phone – 10 modes, collectible designs and a two-player duel.</div>
-      <span class="soon"><span data-lang="cs">Brzy v App Store a Google Play</span><span data-lang="en">Coming soon to App Store &amp; Google Play</span></span>
+      <span class="pill"><span data-lang="cs">Na Google Play</span><span data-lang="en">On Google Play</span></span>
+      <span class="pill soon"><span data-lang="cs">Brzy v App Store</span><span data-lang="en">Soon on the App Store</span></span>
+    </div>
+  </a>
+  <a class="game" href="tyklitadice.html">
+    <img src="tyklitadice-icon.png" alt="Tyklita Dice">
+    <div>
+      <b>Tyklita Dice</b>
+      <div data-lang="cs">Realistické 3D kostky – D4 až D100, 34 vzhledů a 9 prostředí zdarma.</div>
+      <div data-lang="en">Realistic 3D dice – D4 to D100, 34 styles and 9 environments for free.</div>
+      <span class="pill soon"><span data-lang="cs">Již brzy</span><span data-lang="en">Coming soon</span></span>
     </div>
   </a>
 
@@ -51,8 +70,8 @@
   <p><a href="mailto:filliongames@gmail.com">filliongames@gmail.com</a></p>
 
   <footer>
-    <p><a href="poppult-privacy.html"><span data-lang="cs">Zásady ochrany soukromí (Pop Pult)</span><span data-lang="en">Privacy Policy (Pop Pult)</span></a>
-       <a href="poppult-support.html"><span data-lang="cs">Podpora</span><span data-lang="en">Support</span></a></p>
+    <p><a href="poppult-privacy.html">Pop Pult – <span data-lang="cs">soukromí</span><span data-lang="en">privacy</span></a>
+       <a href="tyklitadice-privacy.html">Tyklita Dice – <span data-lang="cs">soukromí</span><span data-lang="en">privacy</span></a></p>
     <p>© 2026 Fillion Games</p>
   </footer>
 </div>
