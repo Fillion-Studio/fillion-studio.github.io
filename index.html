@@ -125,8 +125,10 @@ svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:2;stroke
 .work{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;transition:transform .2s,border-color .2s}
 .work:hover{transform:translateY(-4px);border-color:#3a3a3a}
 .work.hide{display:none}
-.work-thumb{aspect-ratio:16/10;display:grid;place-items:center;background:var(--card-2);position:relative}
+.work-thumb{aspect-ratio:1024/500;display:grid;place-items:center;background:var(--card-2);position:relative;overflow:hidden}
 .work-thumb img{width:84px;height:84px;border-radius:20px;box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.work-thumb.banner img{width:100%;height:100%;object-fit:cover;border-radius:0;box-shadow:none;transition:transform .4s ease}
+.work:hover .work-thumb.banner img{transform:scale(1.04)}
 .work-thumb.ph{color:#4a4a4a}
 .work-thumb.ph svg.i{width:48px;height:48px}
 .work-body{padding:20px}
@@ -417,7 +419,7 @@ footer a:hover{color:var(--text)}
 
     <div class="works">
       <a class="work" data-c="app" href="poppult.html">
-        <div class="work-thumb"><img src="icon.png" alt="Pop Pult ikona"></div>
+        <div class="work-thumb banner"><img src="img/poppult-banner.jpg" alt="Pop Pult – kočka mačká svítící pop pult" width="1024" height="500" loading="lazy"></div>
         <div class="work-body">
           <span class="work-cat">Mobilní hra</span>
           <h3>Pop Pult</h3>
